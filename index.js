@@ -31,6 +31,70 @@
 let cards = []; // You will use this array in step 6
 
 // Continue the code here 👇🏻
+class Cards {
+  Number = 0;
+  color = "yellow";
+  constructor(Number, color) {
+    this.Number = Number;
+    this.color = color;
+  }
+  image() {
+    return `./images/${this.color}_${this.Number}.png`;
+  }
+}
+const mycard1 = new Cards(0, "Blue");
+console.log(mycard1);
+const mycard2 = new Cards(0, "Green");
+console.log(mycard2);
+const mycard3 = new Cards(0, "Red");
+console.log(mycard3);
+const mycard4 = new Cards(0, "Yellow");
+// console.log(mycard4);
+// cards.push(mycard1);
+// cards.push(mycard2);
+// cards.push(mycard3);
+// for (let i = 0; i < 10; i++) {
+//   const mycard1 = new Cards(i, "Blue");
+//   cards.push(mycard1);
+// }
+mycolors = ["Blue", "Green", "Red", "Yellow"];
+mycolors.forEach((mycolor) => {
+  for (let i = 0; i < 10; i++) {
+    const mycard1 = new Cards(i, mycolor);
+    cards.push(mycard1, mycard1);
+  }
+});
+
+// for (let i = 0; i < 10; i++) {
+//   const mycard1 = new Cards(i, "mycolors");
+//   cards.push(mycard1, mycard1);
+// }
+// for (let i = 0; i < 10; i++) {
+//   const mycard1 = new Cards(i, "Green");
+//   cards.push(mycard1);
+// }
+// for (let i = 0; i < 10; i++) {
+//   const mycard1 = new Cards(i, "Yellow");
+//   cards.push(mycard1);
+// }
+// for (let i = 0; i < 10; i++) {
+//   const mycard1 = new Cards(i, "Blue");
+//   cards.push(mycard1);
+// }
+// mycolors = ["Blue", "Green", "Red", "Yellow"];
+
+// for (let i = 0; i < 10; i++) {
+//   const mycard1 = new Cards(i, "Red");
+//   cards.push(mycard1);
+// }
+// for (let i = 0; i < 10; i++) {
+//   const mycard1 = new Cards(i, "Green");
+//   cards.push(mycard1);
+// }
+// for (let i = 0; i < 10; i++) {
+//   const mycard1 = new Cards(i, "Yellow");
+//   cards.push(mycard1);
+// }
 
 /**
  *
